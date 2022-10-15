@@ -11,7 +11,7 @@ parser.add_argument("version")
 args = parser.parse_args()
 path = Path(args.index_folder)
 
-LINE_TEMPLATE = """<a href="{package}/{version}/{wheel}">{wheel}</a><br />"""
+LINE_TEMPLATE = """<a href="{version}/{wheel}">{wheel}</a><br />"""
 output = StringIO()
 
 package_path = Path(".") / args.package
